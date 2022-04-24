@@ -1,0 +1,39 @@
+{
+  "name": "spotifyappbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "type": "module",
+    "lint": "eslint ./",
+    "test": "jest -i --verbose --coverage --runInBand",
+    "start": "node index.js",
+    "dboff": "killall mongod",
+    "watch": "nodemon index.js",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db"
+  },
+  "repository": {
+    "type": "git", 
+    "url": "git+https://github.com/brandonwrson/spotifyappbackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonwrson/spotifyappbackend/issues"
+  },
+  "homepage": "https://github.com/brandonwrson/spotifyappbackend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.3.1",
+    "superagent": "^7.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^27.5.1"
+  }
+}
